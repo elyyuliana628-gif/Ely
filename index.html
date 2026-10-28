@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Bunga Mawar</title>
+
+    <!-- Menghubungkan HTML dengan CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🌹 Galeri Bunga Mawar</h1>
+        <p>Keindahan bunga yang penuh warna dan makna</p>
+    </header>
+
+    <nav>
+        <a href="#beranda">Beranda</a>
+        <a href="#galeri">Galeri</a>
+        <a href="#tentang">Tentang</a>
+    </nav>
+
+    <section class="hero" id="beranda">
+        <h2>Selamat Datang di Galeri Mawar</h2>
+        <p>
+            Nikmati keindahan bunga mawar dengan berbagai warna
+            yang indah dan menawan.
+        </p>
+        <a href="#galeri" class="tombol">Lihat Galeri</a>
+    </section>
+
+    <section class="galeri" id="galeri">
+        <h2>Koleksi Bunga Mawar</h2>
+
+        <div class="kumpulan-kartu">
+
+            <div class="kartu">
+                <img src="https://images.unsplash.com/photo-1494972308805-463bc619d34e?auto=format&fit=crop&w=600&q=80"
+                     alt="Bunga mawar merah">
+                <h3>Mawar Merah</h3>
+                <p>Mawar merah melambangkan cinta dan keberanian.</p>
+            </div>
+
+            <div class="kartu">
+                <img src="https://images.unsplash.com/photo-1455659817273-f96807779a8a?auto=format&fit=crop&w=600&q=80"
+                     alt="Bunga mawar merah muda">
+                <h3>Mawar Pink</h3>
+                <p>Mawar pink menggambarkan kelembutan dan rasa syukur.</p>
+            </div>
+
+            <div class="kartu">
+                <img src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=600&q=80"
+                     alt="Bunga mawar putih">
+                <h3>Mawar Putih</h3>
+                <p>Mawar putih melambangkan ketulusan dan kedamaian.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="tentang" id="tentang">
+        <h2>Tentang Bunga Mawar</h2>
+        <p>
+            Bunga mawar adalah salah satu bunga yang populer karena
+            keindahan bentuk dan aromanya. Mawar memiliki beragam warna
+            yang sering digunakan untuk menyampaikan perasaan.
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2026 Galeri Bunga Mawar | Latihan HTML dan CSS</p>
+    </footer>
+
+</body>
+</html>
+
+  
+/* Pengaturan halaman */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #fff0f5;
+    color: #5c3442;
+    line-height: 1.6;
+}
+
+/* Bagian judul */
+header {
+    background: #e75480;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+/* Menu navigasi */
+nav {
+    background-color: #ffc0cb;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: #7b2945;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* Bagian pembuka */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #ffe4ec, #f8bbd0);
+}
+
+.hero h2 {
+    color: #c2185b;
+    font-size: 28px;
+}
+
+.tombol {
+    display: inline-block;
+    background-color: #d6336c;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.tombol:hover {
+    background-color: #a61e4d;
+}
+
+/* Galeri bunga */
+.galeri {
+    padding: 35px 20px;
+    text-align: center;
+}
+
+.galeri h2,
+.tentang h2 {
+    color: #c2185b;
+}
+
+.kumpulan-kartu {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.kartu {
+    background-color: white;
+    width: 280px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px #00000018;
+    transition: transform 0.3s;
+}
+
+.kartu:hover {
+    transform: translateY(-8px);
+}
+
+.kartu img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.kartu h3 {
+    color: #d6336c;
+}
+
+.kartu p {
+    padding: 0 15px 15px;
+}
+
+/* Bagian tentang */
+.tentang {
+    background-color: #ffe4ec;
+    text-align: center;
+    padding: 35px 25px;
+}
+
+/* Bagian bawah */
+footer {
+    background-color: #c2185b;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Tampilan HP */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 25px;
+    }
+
+    nav a {
+        margin: 0 7px;
+        font-size: 14px;
+    }
+
+    .kartu {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .hero h2 {
+        font-size: 23px;
+    }
+}
